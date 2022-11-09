@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import ArturPage from './ArturPage.jsx';
 
 function App() {
+  let pics = [require('../src/pics/triangle.jpeg'), require('../src/pics/nokia.jpeg'), require('../src/pics/nokia1.jpeg'), require('../src/pics/crush.jpeg')];
+
+  let texts = ['Смотрите какой треугольный', 'Кто поставил фото этого идота', 'Карлик до сетки не достаёт', 'Даже инвалид быстрее его']
+
+  let memes = ['https://i.imgflip.com/5sdtja.jpg'];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ArturPage pics={pics} texts={texts} memes = {memes}/>
     </div>
   );
 }

@@ -1,0 +1,70 @@
+.ArturPageContainer{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.ArturContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ArturLohPic{
+    width: 60vh;
+    height: 60vh;
+    margin: 3vh;
+    
+}
+.ArturLohText{
+    font-size: 50px;
+    
+}
+
+.ArturLohPicAnimation{
+    animation: leftIn 2s;
+    animation-fill-mode: forwards;
+}
+.ArturLohTextAnimation{
+    animation: rightIn 2s;
+    animation-fill-mode: forwards;
+}
+
+.ArturLohMemePic{
+    width: 15vh;
+    height: 15vh;
+    transform: translate(60vh, -200%);
+}
+.ArturLohMemePicAnimation{
+    animation: bottomIn 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes leftIn{
+    0%{
+        transform: translate(-200%, 0);
+        opacity: 15%;
+    }
+    
+    100%{
+        
+    }
+}
+@keyframes rightIn{
+    0%{
+        translate: 200% 0;
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes bottomIn{
+    0%{
+        transform: translate(60vh, 0);
+    }
+
+    100%{
+        transform: translate(60vh, -200%) rotate(720deg)
+
+    }
+}
