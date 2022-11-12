@@ -1,0 +1,4 @@
+[submodule "ArchiTrollingWebsite"]
+    path = ArchiTrollingWebsite
+    url = ../ArchiTrollingWebsite
+    branch = main
